@@ -1,0 +1,101 @@
+что правильно (правильно !!! // не правильно ???)
+1. !!!
+let myVar = 'baNaNa';
+let str = myVar.charAt(0);
+let srr = myVar.slice(1);
+console.log(str.toUpperCase() + srr.toLowerCase());
+
+2. !!!
+let height= parseFloat('0.6hv');
+let width= parseFloat('0.7hv');
+let g = 2*(height+width);
+console.log(g.toFixed(1) + 'hv');
+
+3. !!!
+let merged = true;
+let unmerged = !merged;
+console.log(unmerged);
+console.log(+merged)
+
+4. !!!
+const a = 0;
+const b ='0';
+const c = null;
+const d = false;
+let e = (a==b == c==d); 
+console.log(e);
+let h = (a==b) == (c==d);
+console.log(h);
+
+5. !!!
+let k = 10;
+console.log(++k > 11)
+console.log(k++ <11)
+console.log(++k === k++)
+console.log(k++ === ++k)
+
+
+6. !!!
+let word = "tr";
+let kk = (word.length > 3) ? 25 : "green";
+console.log(kk)
+let bb;
+if (word.length > 3){
+  bb = 25;
+} else {
+  bb = "green";
+}
+console.log(bb)
+let mm ;
+switch(word.length >3){
+	case true:
+	mm = 25;
+	break;
+	default:
+	mm = "green"
+}
+console.log(mm)
+
+
+
+7. !!!
+let apples = 3;
+let pears = -9;
+let oranges = 7;
+let color = 'Red';
+let check = true;
+if (apples > oranges) {
+   if (oranges < pears){
+       return !check;
+   } else {
+       if (!color) {
+           return check;
+       } else {
+           return !check;
+       }
+   }
+} else {
+   if (pears < apples) {
+       return check;
+   } else {
+       if (!color) {
+           return check;
+       } else {
+           return !check;
+       }
+   }
+}
+
+
+8. !!!
+for(var i=80;i>=4;i--){
+if (i % 2)continue 
+ console.log(i);
+ 
+}
+
+for (let i = 7; i <= 41; i++) {
+ if (i % 2) {
+console.log(i);
+ }
+}
